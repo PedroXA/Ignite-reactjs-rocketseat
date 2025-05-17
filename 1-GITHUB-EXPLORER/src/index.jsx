@@ -1,9 +1,7 @@
-import React from 'react';
+import { createRoot } from 'react-dom/client';
+import { App } from './App'
 
-function App(){
-    return (
-        <div>
-            Hello world!
-        </div>
-    )
-}
+
+// O primeiro é o que eu quero renderizar e o segundo é onde que eu quero renderizar
+const root = createRoot(document.getElementById('root'));
+root.render(<App />);
