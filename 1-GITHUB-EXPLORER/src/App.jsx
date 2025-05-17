@@ -1,3 +1,14 @@
-export function App(){
-    return <h1>Hello world!</h1>
+import "../styles/global.scss";
+import { Counter } from "./components/Counter";
+import { RepositoryList } from "./components/RepositoryList";
+
+export function App() {
+  // throw new Error('Deu alguma coisa de ruim aqui!')
+
+  return (
+    <>
+      <RepositoryList />
+      <Counter />
+    </>
+  );
 }

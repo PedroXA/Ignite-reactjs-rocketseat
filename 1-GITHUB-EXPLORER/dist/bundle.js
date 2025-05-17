@@ -1,7 +1,0 @@
-"use strict";
-
-var _react = _interopRequireDefault(require("react"));
-function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
-function App() {
-  return /*#__PURE__*/_react["default"].createElement("div", null, "Hello world!");
-}
