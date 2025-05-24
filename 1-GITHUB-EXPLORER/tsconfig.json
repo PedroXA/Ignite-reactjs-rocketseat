@@ -1,26 +1,17 @@
+// Adiciona algumas funcionalidades para o meu código
 {
   "compilerOptions": {
-    // Adiciona algumas funcionalidades para o meu código
     // DOM - ele entende que eu vou mexer com a arvore dom do meu projeto JS
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "jsx": "react-jsx",
-
     "moduleResolution": "node",
-
     "resolveJsonModule": true,
-
-    "allowJs": true,
-
-    "noEmit": true,
-
+    "allowJs": true, // Permite que arquivos JS e TS sejam compilados
+    "noEmit": true, // Não imprime os outputs no terminal
     "isolatedModules": true,
-
     "esModuleInterop": true,
-
     "forceConsistentCasingInFileNames": true,
-
-    "strict": true,
-
+    "strict": true, // Faz com que o JS atue no seu modo strict
     "skipLibCheck": true
   },
   "include": ["src"]
