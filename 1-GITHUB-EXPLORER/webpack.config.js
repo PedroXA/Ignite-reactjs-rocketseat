@@ -14,7 +14,7 @@ module.exports = {
   devtool: isDevelopment ? "eval-source-map" : "source-map",
 
   // Arquivo inicial da aplicação
-  entry: path.resolve(__dirname, "src", "index.jsx"),
+  entry: path.resolve(__dirname, "src", "index.tsx"),
 
   // Onde e como o Webpack vai salvar o bundle gerado
   output: {
@@ -24,7 +24,7 @@ module.exports = {
 
   // Resolve arquivos sem precisar especificar extensões
   resolve: {
-    extensions: [".js", ".jsx"], // entende .js e .jsx automaticamente
+    extensions: [".js", ".jsx", ".ts", ".tsx"], // entende .js .jsx .ts e .tsx
   },
 
   // Configuração do servidor de desenvolvimento (webpack-dev-server)
@@ -52,7 +52,7 @@ module.exports = {
     rules: [
       {
         // Transpila arquivos .jsx usando Babel
-        test: /\.jsx$/,
+        test: /\.(j|t)sx$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
