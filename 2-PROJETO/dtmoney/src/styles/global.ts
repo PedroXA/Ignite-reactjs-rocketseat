@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 
     :root{
-        --navbar-background: #238662;
+        --header-background: #238662;
         --secundary-green: #10c76e;
         --page-background: #efefef;
     }
@@ -30,6 +30,15 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background-color: (--page-background);
         -webkit-font-smoothing: antialiased;
+    }
+
+    body, input, textarea, button {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 600;
     }
 
     button {
