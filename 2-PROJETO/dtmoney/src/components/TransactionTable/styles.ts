@@ -21,6 +21,14 @@ export const Container = styled.div`
             background: rgb(239, 239, 239, 0.99);
             border-radius: 0.25rem;
         }
+        
+       &.withdraw{
+            color: red;
+        }
+
+        &.deposit{
+            color: var(--secundary-green);
+        }
     }
 
 `

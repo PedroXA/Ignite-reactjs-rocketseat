@@ -16,22 +16,15 @@ export function TransactionTable() {
         <tbody>
           <tr>
             <td>Desenvolvimento de APP</td>
-            <td>R$12.000</td>
+            <td className="deposit">R$1000</td>
             <td>Desenvolvimento</td>
-            <td>02/06/2025</td>
+            <td>12/06/2025</td>
           </tr>
 
           <tr>
-            <td>Desenvolvimento de APP</td>
-            <td>R$12.000</td>
-            <td>Desenvolvimento</td>
-            <td>02/06/2025</td>
-          </tr>
-
-          <tr>
-            <td>Desenvolvimento de APP</td>
-            <td>R$12.000</td>
-            <td>Desenvolvimento</td>
+            <td>Pagamento do Aluguel</td>
+            <td className="withdraw">- R$500</td>
+            <td>Casa</td>
             <td>02/06/2025</td>
           </tr>
         </tbody>
